@@ -1,0 +1,11 @@
+Ficha 3 
+Exercício 6
+
+a)
+	//IDENTI[../CONCEL=" Amares " and ..//TIPO[@ASSUNTO="arqueossitio"]] 
+
+b)
+	//CONCEL[../TIPO[@ASSUNTO="arqueossitio"]]
+
+c)
+	//DESCRI[../CONCEL=" Montalegre " and ..//TIPO[@ASSUNTO="arqueossitio"]]
