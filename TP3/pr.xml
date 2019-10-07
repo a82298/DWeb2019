@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP3</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Terceira entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>1 de Outubro de 2019</bdate>
+        <edate>7 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Na última aula, foi proposto o novo trabalho de casa semanal, cujo o interesse é colocar em prática aquilo que foi aprendido na aula.</p>
+        <p>O objetivo é construir um website dos arqueosítios(arq.xml) e outro do pr.xml (construído pelos alunos, gerado através do dtd corrigido na aula pelo professor). Ambos serão resultado de uma transformação XSL dos respetivos ficheiros XML.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm?fbclid=IwAR3RAROwzqt04MdDQnmKqVSDtHvlt0XNIqpJxyrkoBz9Fxo36iJd1noOSIk"> O website que inspirou o trabalho de casa</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019"> O link dos trabalho de casa do aluno</deliverable>
+        <deliverable path="https://abola.pt"> Passatempos do aluno</deliverable>
+    </deliverables>
+</pr>
