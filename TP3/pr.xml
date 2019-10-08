@@ -2,7 +2,7 @@
 <!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
 <pr>
     <metadata>
-        <keyname>DWEB_TP3</keyname>
+        <keyname>DWEB_TP</keyname>
         <title>Trabalho de casa</title>
         <subtitle>Terceira entrega</subtitle>
         <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
@@ -22,8 +22,10 @@
         <p>O objetivo é construir um website dos arqueosítios(arq.xml) e outro do pr.xml (construído pelos alunos, gerado através do dtd corrigido na aula pelo professor). Ambos serão resultado de uma transformação XSL dos respetivos ficheiros XML.</p>
     </abstract>
     <deliverables>
-        <deliverable path="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm?fbclid=IwAR3RAROwzqt04MdDQnmKqVSDtHvlt0XNIqpJxyrkoBz9Fxo36iJd1noOSIk"> O website que inspirou o trabalho de casa</deliverable>
-        <deliverable path="https://github.com/a82298/DWeb2019"> O link dos trabalho de casa do aluno</deliverable>
-        <deliverable path="https://abola.pt"> Passatempos do aluno</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP3/pr.xml"> pr.xml</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP3/pr.html"> pr.html</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP3/pr.xsl"> pr.xsl </deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP3/arq.xsl"> arq.xsl </deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/tree/master/TP3/html"> web-site </deliverable>
     </deliverables>
 </pr>
