@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP4</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Quarta entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>8 de Outubro de 2019</bdate>
+        <edate>14 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>O objetivo deste trabalho é treinar a nossa capacidade em fazer servidores e também o uso de stylesheet's XSLT.</p>
+        <p>Foi pedido que sobre o ficheiro arq.xml fosse aplicada uma stylesheet XSLT (xml-split.xsl) que gerasse um ficheiro XML por cada arqueossítio (arq1.xml, arq2.xml,etc) . Além disso, este XSLT terá também de associar 
+            a cada ficheiro XML que construiu uma stylesheet XSLT (arq2html.xsl) em ficheiro HTML.</p>
+        <p>Por fim, teve que se construir um servidor que responda ao utilizador consoante o ficheiro que este pede. Por exemplo, se o utilizador escrever localhost:7777/1 , terá que responder com o arq1.xml em formato HTML. </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/arq.xml"> Ficheiro XML que sofreu a partição por cada arqueossítio</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/xml-split.xsl"> Ficheiro XSL que gera um ficheiro XML por cada arqueossítio</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/arq2html.xsl"> Ficheiro XSL que fica associado a cada XML gerado</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/dataset"> Ficheiros XML gerados</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/server.js"> Servidor que responde aos pedidos</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/pr.xml"> Ficheiro XML usado pra fazer este relatório</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP4/pr.xsl"> Ficheiro XSL que gera esta página html</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/tree/master/TP4/pr.html"> Relatório do TP4</deliverable>
+    </deliverables>
+</pr>
