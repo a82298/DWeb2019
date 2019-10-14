@@ -57,9 +57,6 @@
                     </table>
                     <xsl:apply-templates select="ACESSO"/>
                     <xsl:apply-templates select="DEPOSI"/>
-                    <center><div style="background-color:green">
-                        <h3>Outras Informações</h3>
-                    </div></center>
                     <xsl:apply-templates select="QUADRO"/>
                     <xsl:apply-templates select="DESARQ"/>
                     <xsl:apply-templates select="INTERP"/>
@@ -71,43 +68,37 @@
                     </div></center>
                     <xsl:apply-templates select="BIBLIO"/>
                     <hr/>
-                    <center><address>
-                        <a href="index.html#{generate-id()}">Voltar</a>
-                    </address> </center>
                 </body>
             </html>
         
     </xsl:template>
     
     <xsl:template match="ACESSO">
-        <center>
-            <div style="background-color:green">
-                <h3>Acesso</h3>
-            </div>
-        </center>
+        
+         <h3>Acesso: </h3>
         <p><xsl:value-of select="."/></p>
+        
     </xsl:template>
     
     <xsl:template match="QUADRO">
+        <h3>Quadro: </h3>
         <p><xsl:value-of select="."/></p>
     </xsl:template>
     
     <xsl:template match="DESARQ">
+        <h3>Descrição arquitetónica: </h3>
         <p><xsl:value-of select="."/></p>
     </xsl:template>
     
     
     <xsl:template match="INTERP">
+        <h3>Interpretação: </h3>
         <p><xsl:value-of select="."/></p>
     </xsl:template>
     
     
     <xsl:template match="DEPOSI">
-        <center>
-            <div style="background-color:red">
-                <h3>Depósito</h3>
-            </div>
-        </center>
+        <h3>Depósito</h3>
         <p><xsl:value-of select="."/></p>
     </xsl:template>
     
@@ -121,11 +112,13 @@
     
     
     <xsl:template match="TRAARQ">
+        <h3>Trabalhos arqueológicos: </h3>
         <p><xsl:value-of select="."/></p>
     </xsl:template>
     
     
     <xsl:template match="INTERE">
+        <h3>Interesse Arqueológico: </h3>
         <p><xsl:value-of select="."/></p>
     </xsl:template>
     
