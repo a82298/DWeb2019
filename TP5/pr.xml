@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP5</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Quinta entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>15 de Outubro de 2019</bdate>
+        <edate>21 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p> Foi proposto aos alunos que fosse feito um servidor que respondesse a um pedido GET ('/index' ou '/' ou '/gestaoTarefas'), em que o objetivo perante este pedido será apresentar uma página onde será
+             possível acrescentar tarefas novas (através de um pedido PUT) e listar as tarefas que já foram registadas anteriormente. O servidor caso seja pedido algo que não é suportado, deverá responder com uma página de erro.</p>
+        <p> Portanto, para realizar o trabalho, foram usados 3 ficheiros pug. O layout.pug que irá ser 'extendido' pelos outros dois ficheiros pug e foi mostrado pelo professor na última aula. O ficheiro erro.pug será 
+             o template para apresentar uma página de erro quando o pedido não é suportado pelo servidor. O ficheiro index.pug deverá ser responsável por apresentar a página principal.</p>
+        <p> O ficheiro gestaoTarefas.js deverá processar os pedidos e responder-lhes de maneira adequada com o ficheiro correto conforme esses pedidos.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP5/layout.pug"> Ficheiro PUG que será extendido</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP5/erro.pug"> Ficheiro PUG que será responsável por apresentar erros</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP5/index.pug"> Ficheiro PUG que será responsável por apresentar a página principal</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP5/gestaoTarefas.js"> Servidor que responde aos pedidos</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP5/pr.xml"> Ficheiro XML transformado para realizar este relatório</deliverable>
+    </deliverables>
+</pr>
