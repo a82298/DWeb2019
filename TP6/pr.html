@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <style>
+      
+      ul {
+      list-style: circle inside;
+      }
+      
+      
+   </style>
+   <head>
+      <title>Project Record</title>
+      <meta charset="UTF-8"></meta>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+   </head>
+   <body>
+      <div style="background-color:red">
+         <center>
+            <h1>
+               <font size="20">
+                  <b>Project Record</b>
+               </font>
+            </h1>
+         </center>
+      </div>
+      <table class="w3-striped">
+         <tr>
+            <th>
+               <b>KEYNAME:</b>
+            </th>
+            <td>DWEB_TP6</td>
+         </tr>
+         <tr>
+            <th>
+               <b>TITLE:</b>
+            </th>
+            <td>Trabalho de casa</td>
+         </tr>
+         <tr>
+            <th>
+               <b>SUBTITLE:</b>
+            </th>
+            <td>Sexta entrega</td>
+         </tr>
+         <tr>
+            <th>
+               <b>BEGIN DATE:</b>
+            </th>
+            <td>22 de Outubro de 2019</td>
+         </tr>
+         <tr>
+            <th>
+               <b>END DATE:</b>
+            </th>
+            <td>28 de Outubro de 2019</td>
+         </tr>
+         <tr>
+            <th>
+               <b>SUPERVISOR:</b>
+            </th>
+            <td>
+               <address>
+                  <a href="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</a>
+               </address>
+            </td>
+         </tr>
+      </table>
+      <div style="background-color:blue">
+         <h3>
+            <center>
+               <font size="5">
+                  <b>WORK TEAM</b>
+               </font>
+            </center>
+         </h3>
+      </div>
+      <li>
+         <a>82298 - Luís Guilherme Gonçalves Macedo da Silva Martins ( a82298@uminho.pt ) - 
+            <a href="https://github.com/a82298">https://github.com/a82298</a>
+         </a>
+      </li>
+      <div style="background-color:blue">
+         <h3>
+            <center>
+               <font size="5">
+                  <b>ABSTRACT</b>
+               </font>
+            </center>
+         </h3>
+      </div>
+      <p> 
+         Em primeiro lugar, foi pedido aos alunos que transformassem um ficheiro XML (arquivo
+         sonoro fornecido pelo professor) em ficheiro JSON (será a BD do servidor) através
+         de um XSLT ou 
+         de um convertor online, sendo que eu optei por um convertor online.
+         
+      </p>
+      <p>
+         Em seguida, pretendia-se que o servidor (node JS) respondesse aos seguintes pedidos:
+         
+         
+      </p>
+      <p>-Visualizar as músicas disponíveis; </p>
+      <p>-Adicionar mais músicas; </p>
+      <p>-Editar músicas já disponíveis; </p>
+      <p>-Apagar músicas disponíveis.</p>
+      <p> A resolução seria à escolha do aluno, sendo que eu optei por, na página principal,
+         colocar a opção de adicionar músicas e a lista das músicas disponíveis. Dentro das
+         músicas disponíveis, existe
+         um botão para eliminar a música e outro para editar. Ao clicar no botão 'editar' de
+         uma determinada música, apresentar-se-à uma página com os campos a alterar e guardar,
+         sendo que puderá também voltar à 
+         página inicial.
+         
+      </p>
+      <div style="background-color:blue">
+         <center>
+            <h3>
+               <b>DELIVERABLES</b>
+            </h3>
+         </center>
+      </div>
+      <li>
+         <a href="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq-son-EVO.xml"> Ficheiro XML que foi convertido</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/musicas.json"> BD convertida (já tem alguns dados diferentes)</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/view/index.pug"> Ficheiro PUG responsável por apresentar a página principal</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/view/musica.pug"> Ficheiro PUG responsável por apresentar uma única música</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/view/erro.pug"> Ficheiro PUG responsável por apresentar a página de erro</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/bin/www"> Ficheiro responsável pela porta do servidor, colocá-lo à escuta, etc</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/public/javascripts/auxiliar.js"> JavaScript auxiliar responsável por enviar um pedido Delete para eliminar uma música</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/routes/index.js"> Responsável pelos Get's, Put's e Delete's realizados ao servidor</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/app.js"> Responsável por toda a aplicação</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP6/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</a>
+      </li>
+   </body>
+</html>

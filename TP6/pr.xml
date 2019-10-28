@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP6</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Sexta entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>22 de Outubro de 2019</bdate>
+        <edate>28 de Outubro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p> 
+            Em primeiro lugar, foi pedido aos alunos que transformassem um ficheiro XML (arquivo sonoro fornecido pelo professor) em ficheiro JSON (será a BD do servidor) através de um XSLT ou 
+            de um convertor online, sendo que eu optei por um convertor online.
+        </p>
+        <p>
+            Em seguida, pretendia-se que o servidor (node JS) respondesse aos seguintes pedidos: 
+        </p>
+        <p>-Visualizar as músicas disponíveis; </p>
+        <p>-Adicionar mais músicas; </p>
+        <p>-Editar músicas já disponíveis; </p> 
+        <p>-Apagar músicas disponíveis.</p>
+        <p> A resolução seria à escolha do aluno, sendo que eu optei por, na página principal, colocar a opção de adicionar músicas e a lista das músicas disponíveis. Dentro das músicas disponíveis, existe
+        um botão para eliminar a música e outro para editar. Ao clicar no botão 'editar' de uma determinada música, apresentar-se-à uma página com os campos a alterar e guardar, sendo que puderá também voltar à 
+        página inicial.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq-son-EVO.xml"> Ficheiro XML que foi convertido</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/musicas.json"> BD convertida (já tem alguns dados diferentes)</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/view/index.pug"> Ficheiro PUG responsável por apresentar a página principal</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/view/musica.pug"> Ficheiro PUG responsável por apresentar uma única música</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/view/erro.pug"> Ficheiro PUG responsável por apresentar a página de erro</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/bin/www"> Ficheiro responsável pela porta do servidor, colocá-lo à escuta, etc</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/public/javascripts/auxiliar.js"> JavaScript auxiliar responsável por enviar um pedido Delete para eliminar uma música</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/routes/index.js"> Responsável pelos Get's, Put's e Delete's realizados ao servidor</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/musicas/app.js"> Responsável por toda a aplicação</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP6/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</deliverable>
+    </deliverables>
+</pr>
