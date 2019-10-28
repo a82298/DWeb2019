@@ -1,0 +1,59 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-amber
+                h4.w3-center='Alterar Música - ' + m.tit
+                center
+                    img(src='http://www.pngmart.com/files/3/Music-PNG-Photos.png' style='width:120px; height:120px;')
+            .w3-container 
+                h4.w3-blue.w3-center Preencha o(s) campo(s) que pretende alterar
+                form.w3-container(action='/'+id method ='POST')
+                    label
+                        b Província
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prov')
+                    label
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='local')
+                    label
+                        b Título
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='tit')
+                    label
+                        b Músico
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='musico')
+                    label
+                        b Duração
+                    input.w3-input.w3-border.w3-light-grey(type='time' name='duracao')
+                    label.w3-hover-amber 
+                        b Instrumentos
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='inst')
+                    button(class='far fa-save' type='submit' style='background-color: DodgerBlue; color: white; padding: 22px 22px; border-radius: 12px;').w3-hover-green   Guardar
+                table.w3-table
+                    tr
+                        th.w3-gray 
+                            b Província:
+                        td.w3-light-gray=m.prov
+                    tr   
+                        th.w3-gray 
+                            b Local:
+                        td=m.local
+                    tr 
+                        th.w3-gray 
+                            b Título:
+                        td=m.tit
+                    tr
+                        th.w3-gray 
+                            b Músico:
+                        td=m.musico
+                    tr
+                        th.w3-gray 
+                            b Duração:
+                        td=m.duracao
+                    tr
+                        th.w3-gray 
+                            b Instrumentos:
+                        td=m.inst
+            .w3-container.w3-center
+                a(href="/").w3-hover-amber Voltar à página inicial
+    footer.w3-container.w3-amber
+        adress Gerado por DWEB-TPC6 App
