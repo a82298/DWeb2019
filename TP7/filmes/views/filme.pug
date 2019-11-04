@@ -1,0 +1,47 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-amber
+                h4.w3-center='Update Movie - ' + f.title
+                center
+                    img(src='https://carlisletheacarlisletheatre.org/images/movie-icon-transparent-background-3.png' style='width:120px; height:120px;')
+            .w3-container
+                h4.w3-black.w3-center Update Movie
+                .w3-container
+                    label
+                        b Title
+                    input.w3-input.w3-border.w3-light-grey(type='text' id='title' name='title' value=f.title required)
+                    label
+                        b Year
+                    input.w3-input.w3-border.w3-light-grey(type='year' id='year' name='year' value=f.year required)
+                    label
+                        b Actors
+                    table.w3-table-all(id="atores")
+                        each a in f.cast
+                            tr.w3-light-gray
+                                td=a
+                                td
+                                    button(class='fa fa-minus-square' onclick='removeActorA(this)' style='background-color: black; color: #FFBF00; padding: 15px 15px; border-radius: 12px;')
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='actor' id='actor')
+                    button(type= 'button' class="fa fa-plus-square" onclick="addActorA()" style="background-color: black; color: #FFBF00; padding: 15px 15px; border-radius: 12px;").w3-hover-green    Add
+                    p
+                    label
+                        b Genres
+                    table.w3-table-all(id="generos")
+                        each g in f.genres
+                            tr.w3-light-gray
+                                td=g
+                                td
+                                    button(class='fa fa-minus-square' onclick='removeGenreA(this)' style='background-color: black; color: #FFBF00; padding: 15px 15px; border-radius: 12px;')
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='genre' id='genre')
+                    button(type= 'button' class="fa fa-plus-square" onclick="addGenreA()" style="background-color: black; color: #FFBF00; padding: 15px 15px; border-radius: 12px;").w3-hover-green    Add
+                    p
+                    .w3-container
+                        form(action='/filmes/'+f._id).w3-center
+                            button(type = 'submit' class="far fa-save" onclick="updateMovie('"+ f._id + "')" style="background-color: black; color: #FFBF00; padding: 22px 22px; border-radius: 12px;").w3-hover-green    Update
+                    .w3-container
+                        form(action='/filmes/'+f._id).w3-center
+                            button(type = 'submit' class="fas fa-times-circle" style="background-color: black; color: #FFBF00; padding: 22px 22px; border-radius: 12px;").w3-hover-green    Cancel
+    footer.w3-container.w3-amber
+        adress Generate by DWEB-TPC7 App

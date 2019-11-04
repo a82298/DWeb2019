@@ -1,0 +1,46 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-amber
+                h4.w3-center='View Movie - ' + f.title
+                center
+                    img(src='https://carlisletheacarlisletheatre.org/images/movie-icon-transparent-background-3.png' style='width:120px; height:120px;')
+            .w3-container
+                table.w3-table
+                    tr
+                        th.w3-gray 
+                            b Title :
+                        td.w3-light-gray=f.title
+                    tr   
+                        th.w3-gray 
+                            b Year :
+                        td.w3-light-gray=f.year
+                p
+                if f.cast.length>0
+                    table.w3-table-all.w3-centered
+                        tr.w3-gray
+                            th Cast
+                            each c in f.cast
+                                tr.w3-light-gray
+                                    td=c
+                else
+                    h5.w3-center Have no Cast registed
+                p
+                if f.genres.length>0
+                    table.w3-table-all.w3-centered
+                        tr.w3-gray
+                            th Genres
+                            each g in f.genres
+                                tr.w3-light-gray
+                                    td=g
+                else
+                    h5.w3-center Have no Genres registed
+                .w3-container
+                    form(action="/filmes/update/"+f._id).w3-center
+                        button(type='submit' class="fas fa-tools" style="background-color: black; color: #FFBF00; padding: 22px 22px; border-radius: 12px;").w3-hover-amber    Update
+                .w3-container
+                    form(action="/filmes/").w3-center
+                        button(type='submit' class="fa fa-home" style="background-color: black; color: #FFBF00; padding: 22px 22px; border-radius: 12px;").w3-hover-amber    Back to Home Page
+    footer.w3-container.w3-amber
+        adress Generate by DWEB-TPC7 App
