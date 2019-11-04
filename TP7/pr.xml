@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP7</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Sétima entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>29 de Outubro de 2019</bdate>
+        <edate>4 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p> 
+            Neste trabalho de casa, tivemos que realizar algumas queries para recapitular/recordar a sintaxe do MongoDB. Antes disso, teve que se passar o ficheiro JSON fornecido pelo professor para um documento 
+            (ensinado pelo professor na aula) que seria a BD de onde seriam feitas as queries anteriormente faladas e de onde a Aplicação Web iria também buscar os seus dados.
+        </p>
+        <p>
+            Em seguida, pretendia-se que a Aplicação Web (node JS), utilizando o Express, respondesse aos seguintes pedidos: 
+        </p>
+        <p>-Visualizar os filmes disponíveis; </p>
+        <p>-Registar novos filmes; </p>
+        <p>-Visualizar/Editar filmes já disponíveis; </p> 
+        <p>-Apagar filmes disponíveis.</p>
+        <p> A resolução seria à escolha do aluno, sendo que eu optei por, na página principal, colocar a opção de adicionar novos filmes e a lista de filmes disponíveis. Dentro das músicas disponíveis, existe
+        um botão para ver o filme em detalhe e outro para eliminar o filme. Ao clicar no botão para ver em detalhe de um determinado filme, apresentar-se-à toda a informação de um filme, sendo que depois estão
+        disponíveis dois butões: um para puder alterar o filme; outro para voltar a página principal. Ao clicar para alterar o filme, será apresentada a página de edição do filme, sendo que poderá cancelar a ação 
+        de edição ou guardar as alterações. Ambas as opções voltarão à página com todos os detalhes do filme.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/queries.txt"> As queries pedidas pelo professor</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/app.js"> Ficheiro responsável por toda a aplicação</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/bin/www"> Ficheiro responsável pela porta do servidor, colocá-lo à escuta, etc</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/controllers/filmes.js"> Ficheiro responsável por realizar queries da apliacação para o mongo</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/models/filme.js"> Ficheiro responsável por definir o schema da BD e onde serão feitas a queries do ficheiro acima</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/public/javascripts/auxiliar.js"> JavaScript auxiliar </deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/routes/filmes.js"> Responsável pelos Get's, Post's, Put's e Delete's realizados ao servidor</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/index.pug"> Ficheiro PUG responsável por apresentar a página principal</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/filme-observar.pug"> Ficheiro PUG responsável por apresentar os detalhes de um filme</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/filme.pug"> Ficheiro PUG responsável pela edição de um filme</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/error.pug"> Ficheiro PUG responsável por apresentar a página de erro</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP7/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</deliverable>
+    </deliverables>
+</pr>

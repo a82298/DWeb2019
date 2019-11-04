@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <style>
+      
+      ul {
+      list-style: circle inside;
+      }
+      
+      
+   </style>
+   <head>
+      <title>Project Record</title>
+      <meta charset="UTF-8"></meta>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+   </head>
+   <body>
+      <div style="background-color:red">
+         <center>
+            <h1>
+               <font size="20">
+                  <b>Project Record</b>
+               </font>
+            </h1>
+         </center>
+      </div>
+      <table class="w3-striped">
+         <tr>
+            <th>
+               <b>KEYNAME:</b>
+            </th>
+            <td>DWEB_TP7</td>
+         </tr>
+         <tr>
+            <th>
+               <b>TITLE:</b>
+            </th>
+            <td>Trabalho de casa</td>
+         </tr>
+         <tr>
+            <th>
+               <b>SUBTITLE:</b>
+            </th>
+            <td>Sétima entrega</td>
+         </tr>
+         <tr>
+            <th>
+               <b>BEGIN DATE:</b>
+            </th>
+            <td>29 de Outubro de 2019</td>
+         </tr>
+         <tr>
+            <th>
+               <b>END DATE:</b>
+            </th>
+            <td>4 de Novembro de 2019</td>
+         </tr>
+         <tr>
+            <th>
+               <b>SUPERVISOR:</b>
+            </th>
+            <td>
+               <address>
+                  <a href="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</a>
+               </address>
+            </td>
+         </tr>
+      </table>
+      <div style="background-color:blue">
+         <h3>
+            <center>
+               <font size="5">
+                  <b>WORK TEAM</b>
+               </font>
+            </center>
+         </h3>
+      </div>
+      <li>
+         <a>82298 - Luís Guilherme Gonçalves Macedo da Silva Martins ( a82298@uminho.pt ) - 
+            <a href="https://github.com/a82298">https://github.com/a82298</a>
+         </a>
+      </li>
+      <div style="background-color:blue">
+         <h3>
+            <center>
+               <font size="5">
+                  <b>ABSTRACT</b>
+               </font>
+            </center>
+         </h3>
+      </div>
+      <p> 
+         Neste trabalho de casa, tivemos que realizar algumas queries para recapitular/recordar
+         a sintaxe do MongoDB. Antes disso, teve que se passar o ficheiro JSON fornecido pelo
+         professor para um documento 
+         (ensinado pelo professor na aula) que seria a BD de onde seriam feitas as queries
+         anteriormente faladas e de onde a Aplicação Web iria também buscar os seus dados.
+         
+      </p>
+      <p>
+         Em seguida, pretendia-se que a Aplicação Web (node JS), utilizando o Express, respondesse
+         aos seguintes pedidos: 
+         
+      </p>
+      <p>-Visualizar os filmes disponíveis; </p>
+      <p>-Registar novos filmes; </p>
+      <p>-Visualizar/Editar filmes já disponíveis; </p>
+      <p>-Apagar filmes disponíveis.</p>
+      <p> A resolução seria à escolha do aluno, sendo que eu optei por, na página principal,
+         colocar a opção de adicionar novos filmes e a lista de filmes disponíveis. Dentro
+         das músicas disponíveis, existe
+         um botão para ver o filme em detalhe e outro para eliminar o filme. Ao clicar no botão
+         para ver em detalhe de um determinado filme, apresentar-se-à toda a informação de
+         um filme, sendo que depois estão
+         disponíveis dois butões: um para puder alterar o filme; outro para voltar a página
+         principal. Ao clicar para alterar o filme, será apresentada a página de edição do
+         filme, sendo que poderá cancelar a ação 
+         de edição ou guardar as alterações. Ambas as opções voltarão à página com todos os
+         detalhes do filme.
+         
+      </p>
+      <div style="background-color:blue">
+         <center>
+            <h3>
+               <b>DELIVERABLES</b>
+            </h3>
+         </center>
+      </div>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/queries.txt"> As queries pedidas pelo professor</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/app.js"> Ficheiro responsável por toda a aplicação</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/bin/www"> Ficheiro responsável pela porta do servidor, colocá-lo à escuta, etc</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/controllers/filmes.js"> Ficheiro responsável por realizar queries da apliacação para o mongo</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/models/filme.js"> Ficheiro responsável por definir o schema da BD e onde serão feitas a queries do
+            ficheiro acima
+         </a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/public/javascripts/auxiliar.js"> JavaScript auxiliar </a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/routes/filmes.js"> Responsável pelos Get's, Post's, Put's e Delete's realizados ao servidor</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/index.pug"> Ficheiro PUG responsável por apresentar a página principal</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/filme-observar.pug"> Ficheiro PUG responsável por apresentar os detalhes de um filme</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/filme.pug"> Ficheiro PUG responsável pela edição de um filme</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/filmes/views/error.pug"> Ficheiro PUG responsável por apresentar a página de erro</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP7/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</a>
+      </li>
+   </body>
+</html>
