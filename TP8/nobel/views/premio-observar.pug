@@ -1,0 +1,46 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h2.w3-center='Ver Premio'
+                center
+                    img(src='https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png' style='width:120px; height:120px;')
+            .w3-container
+                table.w3-table.w3-centered
+                    tr
+                        th.w3-gray 
+                            b Categoria
+                        td.w3-light-gray=p.category
+                    tr   
+                        th.w3-gray 
+                            b Ano
+                        td.w3-light-gray=p.year
+                
+                    if p.overallMotivation
+                        tr   
+                            th.w3-gray 
+                                b Motivação geral
+                            td.w3-light-gray=p.overallMotivation
+                .w3-container
+                    h4.w3-amber.w3-center Premiados
+                    each l in p.laureates
+                        p
+                            table.w3-table
+                                tr
+                                    th.w3-gray 
+                                        b Nome
+                                    td.w3-light-gray=l.firstname + " " + l.surname
+                                tr
+                                    th.w3-gray 
+                                        b Motivação Individual
+                                    td.w3-light-gray=l.motivation
+                                tr
+                                    th.w3-gray 
+                                        b Partilha
+                                    td.w3-light-gray=l.share
+                .w3-container
+                    form(action="/premios/").w3-center
+                        button(type='submit' class="fa fa-home" style="background-color: #FFBF00; color: black; padding: 22px 22px; border-radius: 12px;").w3-hover-teal    Voltar à Lista de Premios
+    footer.w3-container.w3-teal
+        adress Gerado por DWEB-TPC8 App

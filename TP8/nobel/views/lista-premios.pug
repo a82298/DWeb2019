@@ -1,0 +1,26 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h2.w3-center Prêmios Nobel
+                center
+                    img(src='https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png' style='width:120px; height:120px;')
+            .w3-container
+                h4.w3-amber.w3-center Lista de Prêmios
+                form(action="/").w3-center
+                        button(type='submit' class="fa fa-home" style="background-color: #FFBF00; color: black; padding: 22px 22px; border-radius: 12px;").w3-hover-teal    Voltar à Home Page
+                table.w3-table-all
+                    tr.w3-teal
+                        th Ano
+                        th Categoria
+                        th Ver
+                        each p in lista
+                            tr.w3-light-gray
+                                td=p.year
+                                td=p.category
+                                td
+                                    form(action="/premios/"+p._id)
+                                        button(type='submit' class="fas fa-eye" style="background-color: #FFBF00; color: black; padding: 22px 22px; border-radius: 12px;").w3-hover-teal
+            footer.w3-container.w3-teal
+                adress Gerado por DWEB-TPC8 App
