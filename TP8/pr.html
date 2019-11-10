@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <style>
+      
+      ul {
+      list-style: circle inside;
+      }
+      
+      
+   </style>
+   <head>
+      <title>Project Record</title>
+      <meta charset="UTF-8"></meta>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+   </head>
+   <body>
+      <div style="background-color:red">
+         <center>
+            <h1>
+               <font size="20">
+                  <b>Project Record</b>
+               </font>
+            </h1>
+         </center>
+      </div>
+      <table class="w3-striped">
+         <tr>
+            <th>
+               <b>KEYNAME:</b>
+            </th>
+            <td>DWEB_TP8</td>
+         </tr>
+         <tr>
+            <th>
+               <b>TITLE:</b>
+            </th>
+            <td>Trabalho de casa</td>
+         </tr>
+         <tr>
+            <th>
+               <b>SUBTITLE:</b>
+            </th>
+            <td>Oitava entrega</td>
+         </tr>
+         <tr>
+            <th>
+               <b>BEGIN DATE:</b>
+            </th>
+            <td>5 de Novembro de 2019</td>
+         </tr>
+         <tr>
+            <th>
+               <b>END DATE:</b>
+            </th>
+            <td>11 de Novembro de 2019</td>
+         </tr>
+         <tr>
+            <th>
+               <b>SUPERVISOR:</b>
+            </th>
+            <td>
+               <address>
+                  <a href="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</a>
+               </address>
+            </td>
+         </tr>
+      </table>
+      <div style="background-color:blue">
+         <h3>
+            <center>
+               <font size="5">
+                  <b>WORK TEAM</b>
+               </font>
+            </center>
+         </h3>
+      </div>
+      <li>
+         <a>82298 - Luís Guilherme Gonçalves Macedo da Silva Martins ( a82298@uminho.pt ) - 
+            <a href="https://github.com/a82298">https://github.com/a82298</a>
+         </a>
+      </li>
+      <div style="background-color:blue">
+         <h3>
+            <center>
+               <font size="5">
+                  <b>ABSTRACT</b>
+               </font>
+            </center>
+         </h3>
+      </div>
+      <p> 
+         Neste trabalho de casa, o objetivo seria praticar o que teremos que fazer daqui em
+         diante numa aplicação web, tal como ensinado na última aula pelo professor. 
+         
+      </p>
+      <p>
+         Em primeiro lugar, ao contrário de termos a interface a falar diretamente com o controller
+         (consequentemente com a base de dados), teremos um novo router chamado api, que será
+         uma espécie de
+         intermediário. Basicamente, o utilizador interage com a interface, que faz um pedido
+         para a API de dados, que, por sua vez, comunica com a base de dados através do controller,
+         recebe a resposta
+         e envia para a interface que comunica ao utilizador.
+         
+      </p>
+      <p>
+         Foi proposto aos alunos que construíssem uma API de dados (exercício de uma ficha)
+         que suportasse das seguintes funcionalidades:
+         
+      </p>
+      <p>    -GET /api/premios - Devolve a lista de prémios apenas com os campos "year" e "category";
+         
+      </p>
+      <p>    -GET /api/premios/:id - Devolve a informação completa de um prémio; </p>
+      <p>    -GET /api/categorias - Devolve a lista de categorias, sem repetições; </p>
+      <p>    -GET /api/premios?categoria=YYY - Devolve a lista de prémios que tenham o campo
+         "category" com o valor "YYY"; 
+      </p>
+      <p>    -GET /api/premios?categoria=YYYdata=AAAA - Devolve a lista de prémios que tenham
+         o campo "category" com o valor "YYY" e o campo "year" com um valor superior a "AAAA";
+         
+      </p>
+      <p>    -GET /api/laureados - Devolve uma lista ordenada alfabeticamente por nome dos
+         laureados com os campos correspondentes ao nome, ano do prémio e categoria. 
+      </p>
+      <div style="background-color:blue">
+         <center>
+            <h3>
+               <b>DELIVERABLES</b>
+            </h3>
+         </center>
+      </div>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/app.js"> Ficheiro responsável por toda a aplicação</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/bin/www"> Ficheiro responsável pela porta do servidor, colocá-lo à escuta, etc</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/controllers/nobel.js"> Ficheiro responsável por realizar queries da apliacação para o mongo</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/models/nobel.js"> Ficheiro responsável por definir o schema da BD e onde serão feitas a queries do
+            ficheiro acima
+         </a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/routes/nobel.js"> Responsável pela página inicial da apliacação</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/routes/nobel.js"> Responsável pela interface da apliacação</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/routes/api.js"> Responsável pela comunicação com a BD e com a interface</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/views/index.pug"> Ficheiro PUG responsável por apresentar a página principal</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/views/lista-premios.pug"> Ficheiro PUG responsável por apresentar a lista de prêmios</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/views/premio-observar.pug"> Ficheiro PUG responsável por apresentar os detalhes de um prêmio</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/views/categorias.pug"> Ficheiro PUG responsável por apresentar a lista de categorias</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/views/laureados.pug"> Ficheiro PUG responsável por apresentar a lista de laureados</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/nobel/views/error.pug"> Ficheiro PUG responsável por apresentar a página de erro</a>
+      </li>
+      <li>
+         <a href="https://github.com/a82298/DWeb2019/blob/master/TP8/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</a>
+      </li>
+   </body>
+</html>
