@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP9</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Nona entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>12 de Novembro de 2019</bdate>
+        <edate>18 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p> 
+            Neste trabalho de casa, foi proposto aos alunos que fizessem um programa que fizesse uma execução similar ao comando mongoimport, ou seja, dado um ficheiro jason, converter em uma Base de Dados Mongo 
+            com um determinado nome e uma determinada Collection.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP9/mongoimport.js"> Ficheiro responsável por toda a aplicação</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP9/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</deliverable>
+    </deliverables>
+</pr>
