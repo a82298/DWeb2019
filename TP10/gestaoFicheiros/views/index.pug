@@ -1,0 +1,45 @@
+extends layout
+ 
+block content
+  .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h2.w3-center Gestão de Ficheiros
+                center
+                    img(src='https://cdn.pixabay.com/photo/2013/07/13/11/36/documents-158461__340.png' style='width:120px; height:120px;')
+            .w3-container
+                h4.w3-amber.w3-center Adiconar novo ficheiro
+                form.w3-container(action="/api/ficheiros" method="post" enctype="multipart/form-data")
+                  label
+                      b Descrição
+                  input.w3-input.w3-border.w3-light-grey(type='text' name='desc')
+                  label
+                      b Ficheiro(s):
+                  input.w3-input.w3-border.w3-light-grey(type='file' name='ficheiro' required multiple)
+                  button(class="fa fa-cloud-upload" type="submit" style="background-color: DodgerBlue; color: white; width:100%; padding:15px; font-size:20px; border-radius: 12px;").w3-hover-green   Descarregar
+        
+        .w3-card-4.modal(id='display')
+            
+        .w3-card-4
+          header.w3-container.w3-amber
+            h4.w3-center Lista de ficheiros armazenados
+          .w3-container
+            if (lista.length > 0)
+              table.w3-table-all
+                tr
+                  th Data
+                  th Descrição
+                  th Tipo
+                  th Name
+                  th Tamanho
+                each f in lista
+                  tr(id = 'f_' + f._id, class = 'ficheiro', onclick="showFicheiro("+ JSON.stringify(f) + ")")
+                    td= f.data
+                    td= f.desc
+                    td= f.mimetype
+                    td= f.name
+                    td= f.size
+            else
+              p Não tem nenhum ficheiro armazenado
+  footer.w3-container.w3-teal
+    address Gerado por TPC10 DWEB app

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TP10</keyname>
+        <title>Trabalho de casa</title>
+        <subtitle>Décima entrega</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>19 de Novembro de 2019</bdate>
+        <edate>25 de Novembro de 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p> 
+            Na última aula, o professor ensinou-nos como guardar ficheiros numa aplicação Web, sendo que apenas seria possível selecionar um ficheiro de cada vez. Ora, no trabalho de casa foi-nos proposto
+            que fizessemos o mesmo, mas desta vez poder-se-ia selecionar um ou mais ficheiros e guardá-los. Assim, a grande diferença seria utilizar a função array em vez de a função single (fornecidas pelo
+            módulo Multer) aquando de um pedido de upload à api de dados.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/app.js"> Ficheiro responsável por toda a aplicação</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/bin/www"> Ficheiro responsável pela porta do servidor, colocá-lo à escuta, etc</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/controllers/ficheiros.js"> Ficheiro responsável por realizar queries da apliacação para o mongo</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/models/ficheiros.js"> Ficheiro responsável por definir o schema da BD e onde serão feitas a queries do ficheiro acima</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/routes/index.js"> Responsável pela interface da apliacação e o pedido de download</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/routes/api.js"> Responsável pela comunicação com a BD e com a interface</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/views/index.pug"> Ficheiro PUG responsável por apresentar a página principal</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/views/error.pug"> Ficheiro PUG responsável por apresentar a página de erro</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/gestaoFicheiros/public/ficheiros"> Pasta onde serão guardados os ficheiros</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/TP10/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</deliverable>
+    </deliverables>
+</pr>
