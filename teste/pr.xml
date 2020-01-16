@@ -23,7 +23,8 @@
         </p>
         <p> Em primeiro lugar, no primeiro exercício, foi pedido que se construísse uma API de Dados (baseada num ficheiro JSON). </p>
         <p> A primeira tarefa foi transformar o XML em JSON, com todos os cuidados necessários e transformando tudo apenas numa lista.
-        Depois foi realizado o comando mongoimport deste ficheiro JSON</p>
+        Depois foi realizado o comando mongoimport deste ficheiro JSON com o seguinte comando:</p>
+        <p> mongoimport --db obras --collection obras --file {Caminho ate ao ficheiro JSON que se encontra na pasta do ex1 (obras.json)} --jsonArray </p>
         <p> O objetivo seria responder aos pedidos propostos pelo professor</p>
         <p>Por outro lado, no segundo exercício, o objetivo seria consumir uma API de dados fornecida e construir a respetiva interface WEB. </p>
         <p>Primeiro, foi realizado um teste sobre a API de dados e, através do Postman, respondeu-se às seguintes questões:</p>
