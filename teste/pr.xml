@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/luis%20macedo/Downloads/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>DWEB_TESTE</keyname>
+        <title>Teste de Avaliação</title>
+        <subtitle>Desenvolvimento de Aplicações Web</subtitle>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/"> José Carlos Ramalho</supervisor>
+        <bdate>16 de Janeiro de 2020</bdate>
+        <edate>16 de Janeiro de 2020</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>a82298</identifier>
+            <name>Luís Guilherme Gonçalves Macedo da Silva Martins</name>
+            <email>a82298@uminho.pt</email>
+            <git>https://github.com/a82298</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p> 
+            Neste teste, o objetivo seria praticar grande parte daquilo que aprendemos ao longo de semestre, sendo que terá um peso de 30% da nota final. 
+        </p>
+        <p> Em primeiro lugar, no primeiro exercício, foi pedido que se construísse uma API de Dados (baseada num ficheiro JSON). </p>
+        <p> A primeira tarefa foi transformar o XML em JSON, com todos os cuidados necessários e transformando tudo apenas numa lista.
+        Depois foi realizado o comando mongoimport deste ficheiro JSON</p>
+        <p> O objetivo seria responder aos pedidos propostos pelo professor</p>
+        <p>Por outro lado, no segundo exercício, o objetivo seria consumir uma API de dados fornecida e construir a respetiva interface WEB. </p>
+        <p>Primeiro, foi realizado um teste sobre a API de dados e, através do Postman, respondeu-se às seguintes questões:</p>
+        <p>-Quantas entidades estão catalogadas? R: 546</p>
+        <p>-A que Tipologias pertence a Entidade "Autoridade para as Condições de Trabalho" (ent_ACT)? R: Adminstração Pública e Autoridades de supervisão e fiscalização</p>
+        <p>-Em que processos a entidade "Autoridade Nacional de Segurança Rodoviária" (ent_ANSR) participa como Iniciador? R: Processo com o código 400.10.056</p>
+        <p>-De que processos é dona a entidade "Colégio Militar" (ent_SEF)? R: Processo com o código 750.20.601 </p>
+        <p> Em seguida, montou-se o servidor a consumir a API da maneira pretendida. </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/teste/ex1/"> Resolução do Exercício 1</deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/teste/ex2/"> Resolução do Exercício 2 </deliverable>
+        <deliverable path="https://github.com/a82298/DWeb2019/blob/master/teste/pr.xml"> Ficheiro XML, antes de transformado em HTML, para gerar este relatório</deliverable>
+    </deliverables>
+</pr>
